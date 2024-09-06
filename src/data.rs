@@ -1,7 +1,7 @@
 use burn::data::dataloader::batcher::Batcher;
 use burn::data::dataset::vision::MnistItem;
-use burn::prelude::*;
-use burn::tensor::Tensor;
+use burn::prelude::Backend;
+use burn::tensor::{ElementConversion, Int, Tensor, TensorData};
 
 #[derive(Clone)]
 pub struct MnistBatcher<B: Backend> {
