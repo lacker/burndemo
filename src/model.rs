@@ -1,11 +1,7 @@
-use burn::{
-    nn::{
-        conv::{Conv2d, Conv2dConfig},
-        pool::{AdaptiveAvgPool2d, AdaptiveAvgPool2dConfig},
-        Dropout, DropoutConfig, Linear, LinearConfig, Relu,
-    },
-    prelude::*,
-};
+use burn::nn::conv::{Conv2d, Conv2dConfig};
+use burn::nn::pool::{AdaptiveAvgPool2d, AdaptiveAvgPool2dConfig};
+use burn::nn::{Dropout, DropoutConfig, Linear, LinearConfig, Relu};
+use burn::prelude::*;
 
 #[derive(Module, Debug)]
 pub struct Model<B: Backend> {
